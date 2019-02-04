@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Űrlap</title>
+</head>
+<body>
+    <header id="up">
+        <nav>
+            <a href="Leiras.html">Tájékoztató</a>
+            <a href="ugyfelszolgalat.html">Ügyfélszolgálat</a>
+        </nav>
+    </header>
+    <h2>Kérdőív</h2>
+    <p>Kérem töltse ki kérdőívünket!</p>
+    <p>Ha problémája akadt az űrlap kitöltésével akkor kérem <a href="Leiras.html">kattintson ide</a> vagy pedig a Tájékoztató menüpontra
+    a fejlécen.</p>
+    <form method="get">
+    <h3>Személyes adatok</h3>
+    <label for="fN">Vezeték név:</label><input type="text" name="firstName" id="fN" required="true"/> *
+    <br/>
+    <label for="lN">Kereszt név:</label><input type="text" name="lastName" id="lN" required="true"/> *
+    <br/>
+    <label>Leánykori név: <input type="text" name="maidenName"/></label>
+    <br/>
+        <label>Születési dátum: <input type="date" name="szulDatum"/></label>
+    <br/>
+    <br/>
+    <fieldset>
+     <legend>Mi a neme? *</legend>
+     <label><input type="radio" name="nem" value="ferfi"/> Férfi</label>
+     <label><input type="radio" name="nem" value="no" checked />Nő</label>
+    </fieldset>
+    <br/>
+    <label for="ap">Állampolgárság: </label>
+    <select id="ap" name="allampolgarsag">
+        <optgroup label="EU állampolgár">
+            <option>Német</option>
+            <option>Lengyel</option>
+            <option>Olasz</option>
+            <option selected>Magyar</option>
+            <option>Spanyol</option>
+            <option>Egyéb EU-s állampolgár...</option>
+        </optgroup>
+        <optgroup label="Egyéb állampolgár">
+            <option>Amerikai</option>
+            <option>Kanadai</option>
+            <option>Brazil</option>
+            <option>Kínai</option>
+            <option>Japán</option>
+            <option>Kóreai</option>
+            <option>Oroasz</option>
+            <option>Ausztrál</option>
+            <option>Indiai</option>
+            <option>Egyéb...</option>
+        </optgroup>
+    </select>
+    <br/>
+    <label for="email">E-mail cím:</label>
+    <br/>
+    <input id="email" type="email" name="email" placeholder="pl.:mekkelek@elek.com" required/> *
+    <br/>
+    <label>Telefon: <br/> 
+        <input type="text" name="telefeon" placeholder="pl.:06301231234" pattern="[0][6]\d\d\d\d\d\d\d\d\d"/>
+    </label>
+    <br/>
+    <h3>Kérdőív</h3>
+    <img src="img/mcdonalds.png" alt="mcdonalds logo">
+    <br/><br/>
+     <label>1.a) Milyen gyakran jár a McDonald's-ba?</label>
+     <br/>
+     <select name="milyenGYakran">
+         <option disabled selected>Kérem válasszon...</option>
+         <option value="mGy1">Naponta</option>
+         <option value="mGy2">Hetente többször</option>
+         <option value="mGy3">Hetente egyszer</option>
+         <option value="mGy4">Havonta</option>
+         <option value="mGy5">Ritkábban</option>
+         <option value="mGy6">Szinte soha</option>
+     </select>
+    </br>
+     <label>b) Ha az Ön válasza havonta vagy ennél ritkábban, milyen feltételek megváltozása esetén
+            járna gyakrabban a McDonald's-ba?</label>
+            <br/>
+      <textarea name="feltetelk" rows="7" cols="120">
+      </textarea>
+    <fieldset>
+    <br/><br/>
+    <legend>2. Kivel szokott járni a McDonald's-ba? (Több válasz is megjelölhető)</legend>
+     <label><input type="checkbox" name="kivel1">barátaimmal</label><br/>
+     <label><input type="checkbox" name="kivel2">egyedül</label><br/>
+     <label><input type="checkbox" name="kivel3">szüleimmel</label><br/>
+     <label><input type="checkbox" name="kivel4">gyerekeimmel</label><br/>
+     <label><input type="checkbox" name="kivel5">feleségemmel, barátnőmmel / férjemmel, barátommal</label><br/>
+     <label><input type="checkbox" name="kivel6">Egyéb: </label>
+     <textarea name="kivel6" rows="1" cols="70"></textarea>
+    </fieldset><br/>
+    <label>3. Miért szokott a McDonald's-ba járni? (Több válasz is megjelölhető)</label><br/>
+    <select name="miert" multiple>
+        <option value="m1">Mert ízlik az étel</option>
+        <option value="m2">Mert a barátaim is ide járnak</option>
+        <option value="m3">Mert erre van időm</option>
+        <option value="m4">Mert az étteremnél olcsóbb</option>
+        <option value="m5">Mert a gyerekeimet el kell kísérnem</option>
+        <option value="m6">Mert mindig van valamien akció</option>
+    </select>
+    <br/><br/>
+    <fieldset>
+    <legend>4. Mi a véleménye ... (Kérem osztályozza az egyes pontokat 1-5-ig terjedő skálán,
+            1-legrosszabb, legalacsonyabb 5-legjobb, legmagasabb)</legend><br/>
+        <label>a minőségről?</label> <br/>
+        <input type="radio" name="minoseg" value="1">1 
+        <input type="radio" name="minoseg" value="2">2 
+        <input type="radio" name="minoseg" value="3">3 
+        <input type="radio" name="minoseg" value="4">4 
+        <input type="radio" name="minoseg" value="5">5 
+        <br/>
+        <label>a kiszolgálásról, udvariasságról?</label> <br/>
+        <input type="radio" name="kiszolgalas" value="1">1 
+        <input type="radio" name="kiszolgalas" value="2">2 
+        <input type="radio" name="kiszolgalas" value="3">3 
+        <input type="radio" name="kiszolgalas" value="4">4 
+        <input type="radio" name="kiszolgalas" value="5">5 
+        <br/>
+        <label>a gyorsaságról?</label> <br/>
+        <input type="radio" name="gyorsasag" value="1">1 
+        <input type="radio" name="gyorsasag" value="2">2 
+        <input type="radio" name="gyorsasag" value="3">3 
+        <input type="radio" name="gyorsasag" value="4">4 
+        <input type="radio" name="gyorsasag" value="5">5 
+        <br/>
+        <label>a tisztaságról?</label> <br/>
+        <input type="radio" name="tisztasag" value="1">1 
+        <input type="radio" name="tisztasag" value="2">2 
+        <input type="radio" name="tisztasag" value="3">3 
+        <input type="radio" name="tisztasag" value="4">4 
+        <input type="radio" name="tisztasag" value="5">5 
+        <br/>
+        <label>az árról?</label> <br/>
+        <input type="radio" name="ar" value="1">1 
+        <input type="radio" name="ar" value="2">2 
+        <input type="radio" name="ar" value="3">3 
+        <input type="radio" name="ar" value="4">4 
+        <input type="radio" name="ar" value="5">5 
+    </fieldset>
+        <br/><br/>
+        <label>5. Mennyit költ el átlagosan egy alkalommal a saját étkezésére a McDonalds'-ban?
+            <br/>
+            <input type="number" name="elkolt"/>Ft-ot
+        </label>
+    <br/><br/>
+    <label>6. Ha külföldön jár meglátogatja-e a helyi McDonald's-ot?</label> <br/>
+    <select name="kulfoldon">
+        <option selected disabled>Kérem válasszon...</option>
+        <option value="1">Igen</option>
+        <option value="0">Nem</option>
+    </select>
+    <br/><br/>
+    <label for="mitEnni">7.a) Mit szokott enni a McDonald's-ban?</label>
+    <br/>
+    <textarea id="mitEnni" cols="80" rows="2"></textarea>
+    <br/>
+    <p>Köszönjük hogy kitöltötte kérdőívünket!!</p>
+    <button type="submit"><img src="img/gomb.png"> Elküldés! <img src="img/gomb.png"></button>
+    <input type="reset"/>
+    </form>
+    <br/>
+    <a href="#up">Az oldal telejére...</a>
+</body>
+</html>

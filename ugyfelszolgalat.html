@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ügyfélszolgálat</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Urlap.html">Kérdőív</a>
+            <a href="Leiras.html">Tájékoztató</a>
+        </nav>
+    </header>
+    <h1>Ügyfélszolgálat</h1>
+    <div>Üdvözöljük ügyfélszolgálatunkon. Kérem írja meg problémáját!</div>
+    <div>Munkatársunk 1 órán belül válaszolni fog önnek e-mailben.</div>
+    <div>Ha sürgős kérdése van akkor kérem keressen minket telefonon. Tel.: +36 1 234 5678</div>
+    <br/>
+    <form method="get">
+        <label>Név: <input type="text" name="name" placeholder="Mekk Elek" required="true"/></label>
+        <br/>
+        <label>E-mail: <input type="email" name="email" placeholder="pl.:mekkelek@elek.com" required="true"/></label>
+        <br/>
+        <br/>
+        <label>Üzenet:</label>
+        <br/>
+        <textarea type="text" name="uzent" placeholder="Írja ide üzenetét:..." rows="12" cols="100"></textarea>
+        <br/>
+        <label><input type="checkbox" name="elfogad" value="valaszido" checked /> Elfogadom hogy az ügyfélszolgálati válasz 1 órán túl is nyúlhat!</label>
+        <br/>
+        <button type="submit">
+            <a href="Urlap.html"></a>
+            Üzenet elüldése
+        </button>
+        <input type="reset" value="Mégsem">
+    </form>
+</body>
+</html>
